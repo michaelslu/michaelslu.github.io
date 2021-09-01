@@ -1,3 +1,8 @@
+<!--
+    CS3744 Project 1: HTML Resume
+    Michael Lu (michaelslu)
+    9/1/2021
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +10,10 @@
     <meta charset="utf-8">
     <title>Michael Lu's Resume</title>
 </head>
+<!-- end boiler plate -->
 
 <body>
+    <!-- Title and navigation for the resume -->
     <div id="page-banner">
         <header>
             <h1 id="title">Michael Lu</h1>
@@ -20,19 +27,21 @@
             </nav>
         </header>
     </div>
+    <!-- Section dedicated to my picture and personal bio -->
     <section id="about-me" class="about">
         <h2 class="section-header">About Me</h2>
-        <img id="profile-picture" src="profilepic.jpg" alt="A picture of me, Michael Lu">
+        <img id="profile-picture" src="profilepic.jpg" alt="Michael Lu's head shot">
         <p id="bio">Hi, I'm Michael Lu.
             <br> I'm a senior majoring in Computer Science at Virginia Tech focusing on software engineering.
             <br> I enjoy learning about and working on innovative tech that changes lives.
         </p>
     </section>
+    <!-- My contact information -->
     <section id="contact-me" class="contact">
         <h2 class="section-header">Contact Me</h2>
         <p id="name">Michael Lu</p>
-        <h3 class="sub-header">Home Address</h3>
-        <address id="home-address" class="address">
+        <h3 class="sub-header">Mailing Address</h3>
+        <address id="mailing-address" class="address">
             <p class="street-address">
             <p class="address street">13327 Horsepen Woods Ln</p>
             <p>
@@ -48,19 +57,19 @@
             <a href="mailto:michaelslu@vt.edu">michaelslu@vt.edu</a>
         </address>
     </section>
+    <!-- Education (just undergrad will prob add grad later) -->
     <section id="education" class="credential-container">
         <h2 class="section-header">Education</h2>
-        <ul>
-            <li class="school">Virginia Tech | Fall 2021
-                <ul>
-                    <li class="degree">B.S. Computer Science, 3.84 GPA</li>
-                </ul>
-            </li>
+        <p id="university" class="sub-header">Virginia Tech | Fall 2021</p>
+        <ul class="school-information">
+            <li>B.S. Computer Science, 3.84 GPA</li>
         </ul>
     </section>
+    <!-- Work history -->
     <section id="experience" class="credential-container">
         <h2 class="section-header">Experience</h2>
         <ul id="employment-history">
+            <!-- Highlight latest/current employer -->
             <li id="current-employer" class="employer">Software Engineer Intern | Capital One | June 2021 - August 2021
                 <ul>
                     <li class="employment-duty">Working under Retail Bank Technology in Go and Typescript</li>
@@ -91,6 +100,7 @@
             </li>
         </ul>
     </section>
+    <!-- Skills section, will probably go for a multi column display later -->
     <section id="skills" class="credential-container">
         <h2 class="section-header">Skills</h2>
         <div id="programming-languages">
@@ -116,12 +126,14 @@
             </ul>
         </div>
     </section>
+    <!-- My other sites like GH and LinkedIn -->
     <section id="websites" class="external-links">
         <h2 class="section-header">Websites</h2>
         <a href="https://www.linkedin.com/in/lu-michael/" target="_blank">LinkedIn</a>
         <br>
         <a href="https://github.com/michaelslu" target="_blank">GitHub</a>
     </section>
+    <!-- Footer info and return to top of page -->
     <div id="page-footer">
         <footer>
             <a href="#">

@@ -1,0 +1,83 @@
+:root {
+    --banner-size: 5em;
+    --footer-size: 1.5em;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #304145;
+    color: #BAC7CE;
+    min-height: var(--banner-size);
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #BAC7CE;
+    font-size: larger;
+    text-align: center;
+}
+
+#profile-picture {
+    border-radius: 10%;
+    height: 10em;
+    width: 10em;
+}
+
+.section-header {
+    color: #304145;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    scroll-padding-top: 8em;
+}
+
+.sub-header {
+    color: #BD3147;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #304145;
+    width: 100%;
+    max-height: var(--footer-size);
+}
+
+#footer-email {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: #BAC7CE;
+}
+
+.content {
+    padding-top: var(--banner-size);
+    padding-bottom: var(--footer-size);
+}
+
+.employer {
+    list-style-type: none;
+}
+
+.employment-duty, .skill-list {
+    list-style-position: inside;
+}
+
+/* Referenced: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+
+.nav-bar a {
+    color: #BAC7CE;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background: #E5E7E7;
+    color: #304145;
+}

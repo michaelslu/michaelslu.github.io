@@ -9,8 +9,10 @@
 <head>
     <meta charset="utf-8">
     <title>Michael Lu's Resume</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <!-- end boiler plate -->
+
 
 <body>
     <!-- Title and navigation for the resume -->
@@ -19,125 +21,104 @@
             <h1 id="title">Michael Lu</h1>
             <nav class="nav-bar">
                 <a href="#about-me">About Me</a>
-                <a href="#contact-me">Contact Me</a>
                 <a href="#education">Education</a>
                 <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
-                <a href="#websites">Websites</a>
+                <a href="https://www.linkedin.com/in/lu-michael/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/michaelslu" target="_blank">GitHub</a>
             </nav>
         </header>
     </div>
-    <!-- Section dedicated to my picture and personal bio -->
-    <section id="about-me" class="about">
-        <h2 class="section-header">About Me</h2>
-        <img id="profile-picture" src="profilepic_michaelslu-final.jpeg" alt="Michael Lu's head shot">
-        <p id="bio">Hi, I'm Michael Lu.
-            <br> I'm a senior majoring in Computer Science at Virginia Tech focusing on software engineering.
-            <br> I enjoy learning about and working on innovative tech that changes lives.
-        </p>
-    </section>
-    <!-- My contact information -->
-    <section id="contact-me" class="contact">
-        <h2 class="section-header">Contact Me</h2>
-        <p id="name">Michael Lu</p>
-        <h3 class="sub-header">Mailing Address</h3>
-        <address id="mailing-address" class="address">
-            <p class="street-address">
-            <p class="address street">13327 Horsepen Woods Ln</p>
-            <p>
-                <span class="address city">Herndon</span>
-                <span class="address state">VA,</span>
-                <span class="address postal-code">20171</span>
+    <div class="content">
+        <!-- Section dedicated to my picture and personal bio -->
+        <section id="about-me" class="about">
+            <h2 class="section-header">About Me</h2>
+            <img id="profile-picture" src="profilepic.jpeg" alt="Michael Lu's head shot">
+            <p id="bio">Hi, I'm Michael Lu and I'm from Northern Virginia.
+                <br> I'm a senior majoring in Computer Science at Virginia Tech focusing on software engineering.
+                <br> I will be joining Capital One as a Software Engineer in early 2022!
+                <br> Feel free to reach me by <a href="mailto:michaelslu@vt.edu">email.</a>
             </p>
-        </address>
-        <address id="phone-number">
-            <a href="tel:703-200-3377">703-200-3377</a>
-        </address>
-        <address id="email">
-            <a href="mailto:michaelslu@vt.edu">michaelslu@vt.edu</a>
-        </address>
-    </section>
-    <!-- Education (just undergrad will prob add grad later) -->
-    <section id="education" class="credential-container">
-        <h2 class="section-header">Education</h2>
-        <p id="main-university" class="undergrad">Virginia Tech | Fall 2021</p>
-        <ul class="degree-information">
-            <li>B.S. Computer Science, 3.84 GPA</li>
-        </ul>
-    </section>
-    <!-- Work history -->
-    <section id="experience" class="credential-container">
-        <h2 class="section-header">Experience</h2>
-        <ul id="employment-history">
+        </section>
+
+        <!-- Education (just undergrad will prob add grad later) -->
+        <section id="education" class="credential-container">
+            <h2 class="section-header">Education</h2>
+            <h3 id="main-university" class="sub-header undergrad">Virginia Tech | Fall 2021</h3>
+
+            <p id="degree-info">B.S. Computer Science, 3.84 GPA</p>
+        </section>
+        <!-- Work history -->
+        <section id="experience" class="credential-container">
+            <h2 class="section-header">Experience</h2>
             <!-- Highlight latest/current employer -->
-            <li id="current-employer" class="employer">Software Engineer Intern | Capital One | June 2021 - August 2021
-                <ul>
-                    <li class="employment-duty">Working under Retail Bank Technology in Go and Typescript</li>
-                </ul>
-            </li>
-            <li class="employer">Software Engineer Intern | MITRE | May 2020 - July 2020
-                <ul>
-                    <li class="employment-duty">Java RESTful API and Python ETL microservices development in a
-                        Linux/UNIX environment</li>
-                    <li class="employment-duty">Agile cloud-based application development with Docker</li>
-                    <li class="employment-duty">Developed API endpoints with Java Spring framework, SQL, MariaDB, and
-                        JSON</li>
-                    <li class="employment-duty">Added various functionalities, improvements, and bug fixes for ETL
-                        Python scripts</li>
-                    <li class="employment-duty">Performed QA and testing for API and ETL code</li>
-                </ul>
-            </li>
-            <li class="employer">Technical Intern | InCadence Strategic Solutions | May 2019 - July 2019
-                <ul>
-                    <li class="employment-duty">Remote Python development of sponsor training software in a Linux/UNIX
-                        environment</li>
-                    <li class="employment-duty">Applied data engineering and GIS techniques to develop scripts for
-                        visualization and analysis
-                    </li>
-                    <li class="employment-duty">Developed scripts to manage file complexity for sponsor software using
-                        Git version control</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-    <!-- Skills section, will probably go for a multi column display later -->
-    <section id="skills" class="credential-container">
-        <h2 class="section-header">Skills</h2>
-        <div id="programming-languages">
-            <h3 class="sub-header skills">Languages</h3>
-            <ul class="skill-list languages-list">
-                <li>Python</li>
-                <li>Java</li>
-                <li>C</li>
-                <li>Go</li>
-                <li>SQL</li>
+            <h3 class="sub-header employer">Software Engineer | Capital One | February 2022</h3>
+            <ul>
+                <li class="employment-duty">Joining Capital One full-time as a SWE in the TDP program</li>
             </ul>
-        </div>
-        <div id="technologies-and-frameworks">
-            <h3 class="sub-header skills">Technologies and Frameworks</h3>
-            <ul class="skill-list tech-framework-list">
-                <li>Agile</li>
-                <li>Snowflake</li>
-                <li>Git</li>
-                <li>Docker</li>
-                <li>AWS</li>
-                <li>Grafana</li>
-                <li>Microservices</li>
+            <h4 class="sub-header employer">Software Engineer Intern | Capital One | June 2021 - August
+                2021</h4>
+            <ul>
+                <li class="employment-duty">Worked under Retail Bank Technology in Go and Typescript</li>
             </ul>
-        </div>
-    </section>
-    <!-- My other sites like GH and LinkedIn -->
-    <section id="websites" class="external-links">
-        <h2 class="section-header">Websites</h2>
-        <a href="https://www.linkedin.com/in/lu-michael/" target="_blank">LinkedIn</a>
-        <br>
-        <a href="https://github.com/michaelslu" target="_blank">GitHub</a>
-    </section>
-    <!-- Footer info and return to top of page -->
+            <h4 class="sub-header employer">Software Engineer Intern | MITRE | May 2020 - July 2020</h4>
+            <ul>
+                <li class="employment-duty">Java RESTful API and Python ETL microservices development in a
+                    Linux/UNIX environment</li>
+                <li class="employment-duty">Agile cloud-based application development with Docker</li>
+                <li class="employment-duty">Developed API endpoints with Java Spring framework, SQL, MariaDB,
+                    and
+                    JSON</li>
+                <li class="employment-duty">Added various functionalities, improvements, and bug fixes for ETL
+                    Python scripts</li>
+                <li class="employment-duty">Performed QA and testing for API and ETL code</li>
+            </ul>
+            <h4 class="sub-header employer">Technical Intern | InCadence Strategic Solutions | May 2019 - July
+                2019</h4>
+            <ul>
+                <li class="employment-duty">Remote Python development of sponsor training software in a
+                    Linux/UNIX
+                    environment</li>
+                <li class="employment-duty">Applied data engineering and GIS techniques to develop scripts for
+                    visualization and analysis
+                </li>
+                <li class="employment-duty">Developed scripts to manage file complexity for sponsor software
+                    using
+                    Git version control</li>
+            </ul>
+
+        </section>
+        <!-- Skills section, will probably go for a multi column display later -->
+        <h2 id="skills" class="section-header">Skills</h2>
+        <section class="skills-container">
+            <div id="programming-skills" class="skills-wrapper">
+                <h3 class="sub-header skills">Languages</h3>
+                <ul class="skill-list languages-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>Go</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div id="misc-skills" class="skills-wrapper">
+                <h3 class="sub-header skills">Technologies and Frameworks</h3>
+                <ul class="skill-list tech-framework-list">
+                    <li>Agile</li>
+                    <li>Snowflake</li>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>AWS</li>
+                    <li>Grafana</li>
+                    <li>Microservices</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Footer info and return to top of page -->
+    </div>
     <div id="page-footer">
         <footer>
-            <p id="page-author">Author: Michael Lu</p>
-            <p id="return-top"><a href="#">To Top of Page</a></p>
+            <a id="footer-email" href="mailto:michaelslu@vt.edu">Email Me!</a>
         </footer>
     </div>
 </body>

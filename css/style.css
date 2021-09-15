@@ -1,7 +1,24 @@
+/* 
+    CS3744 Project 2: Stylish Resume
+    Michael Lu (michaelslu)
+    9/15/2021
+*/
+
+/* 
+    Define variables for banner and footer size 
+    Inspired from the demo video.
+*/
+
 :root {
     --banner-size: 5em;
     --footer-size: 1.5em;
 }
+
+/* 
+    Set the header as a banner with a minimum height.
+    This banner is fixed to the top and stays visible while scrolling.
+    It fills the entire top width and is all uppercase Courier New lettering.
+*/
 
 header {
     position: fixed;
@@ -15,12 +32,24 @@ header {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* 
+    Set the overall font to be Calibri for the site, and then target specific areas later.
+    Set a font size as well as align all the text to the center.
+    Set a background color for the site.
+*/
+
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #BAC7CE;
     font-size: 1.5rem;
     text-align: center;
 }
+
+/* 
+    Specifically target the profile picture on the page.
+    Decrease the size as well as give it a rounded border that contrasts with the 
+    body background.
+*/
 
 #profile-picture {
     border-radius: 10%;
@@ -31,19 +60,31 @@ body {
     border-width: 0.5rem;
 }
 
+/* 
+    Set all main headers to be uppercase and Courier New, as well as set the text color
+    to contrast with the body background.
+*/
+
 .section-header {
     color: #304145;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
 }
 
-html {
-    scroll-padding-top: 9rem;
-}
+/* 
+    Set all the sub headers to be red, help highlight work experience, education, and skills.
+*/
 
 .sub-header {
     color: #BD3147;
 }
+
+/* 
+    Define the footer with a max height to be fixed at the bottom 
+    of the page and stay on screen while scrolling.
+    Fills the width of the bottom.
+    Background color matches with header.
+*/
 
 footer {
     position: fixed;
@@ -54,15 +95,30 @@ footer {
     max-height: var(--footer-size);
 }
 
+/* 
+    Set all links to be the same font and color.
+*/
+
 a {
     color: #BAC7CE;
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* 
+    A div with id = "content" is used to help declare the padding between top and bottom.
+    This is to prevent content from slipping behind the header and footer.
+*/
+
 #content {
     padding-top: var(--banner-size);
     padding-bottom: var(--footer-size);
 }
+
+/* 
+    For lists in a list, I want the bullets to be next to the words.
+    Changing text to be center aligned bugged it out originally, but
+    changing the position to inside fixes it.
+*/
 
 .sub-list {
     list-style-position: inside;
